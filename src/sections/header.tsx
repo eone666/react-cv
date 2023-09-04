@@ -7,6 +7,7 @@ import MapMarker from "../icons/map-marker.tsx";
 import Email from "../icons/email.tsx";
 import Linkedin from "../icons/linkedin.tsx";
 import Telegram from "../icons/telegram.tsx";
+import myPhoto from "../assets/my-photo.jpg";
 
 const styles = StyleSheet.create({
   root: {
@@ -43,7 +44,7 @@ export default function Header() {
   return (
     <View style={styles.root}>
       <View style={styles.left}>
-        <Image style={styles.photo} src="/my-photo.jpg" />
+        <Image style={styles.photo} src={myPhoto} />
         <View>
           <Text style={styles.fullName}>Ivan Avdeyev</Text>
           <Text>Frontend Developer</Text>
