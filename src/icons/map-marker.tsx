@@ -1,25 +1,14 @@
-import { G, Path, Svg } from "@react-pdf/renderer";
+import { Path, Svg } from "@react-pdf/renderer";
 import { IconProps } from "../types/icon.ts";
 
 export default function MapMarker({ width, height, color }: IconProps) {
   return (
-    <Svg viewBox="0 0 24 24" width={width} height={height}>
-      <G>
-        <Path
-          d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-          stroke={color}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></Path>
-        <Path
-          d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-          stroke={color}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></Path>
-      </G>
+    <Svg width={width} height={height} viewBox="0 0 1920 1920">
+      <Path
+        d="M956.952 0c-362.4 0-657 294.6-657 656.88 0 180.6 80.28 347.88 245.4 511.56 239.76 237.96 351.6 457.68 351.6 691.56v60h120v-60c0-232.8 110.28-446.16 357.6-691.44 165.12-163.8 245.4-331.08 245.4-511.68 0-362.28-294.6-656.88-663-656.88"
+        fill-rule="evenodd"
+        fill={color}
+      />
     </Svg>
   );
 }
